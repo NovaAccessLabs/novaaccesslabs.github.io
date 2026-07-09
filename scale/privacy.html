@@ -1,47 +1,125 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — NovaAccessScale</title>
+<meta name="description" content="Privacy policy for the NovaAccessScale Android app. No data collected, no tracking, no ads.">
 <style>
-  body{font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-       color:#1b1f24;line-height:1.6;max-width:720px;margin:0 auto;padding:24px}
-  h1{color:#06142E;border-bottom:3px solid #22D3EE;padding-bottom:8px}
-  h2{color:#0E7490;margin-top:1.6em}
-  a{color:#0E7490}
-  .updated{color:#5f6b76;font-size:.95em}
-  ul{padding-left:1.2em}
+  :root {
+    --bg: #ffffff;
+    --surface: #f3f4f6;
+    --text: #111111;
+    --muted: #4b5563;
+    --heading: #06142e;
+    --accent: #164e63;
+    --border: #d1d5db;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #06142e;
+      --surface: #0b1f3a;
+      --text: #ffffff;
+      --muted: #aeb4be;
+      --heading: #ffffff;
+      --accent: #22d3ee;
+      --border: #3b4a63;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 20px 80px;
+  }
+  h1 { color: var(--heading); font-size: 2rem; line-height: 1.2; margin: 0 0 4px; }
+  h2 { color: var(--heading); font-size: 1.3rem; margin: 40px 0 8px; }
+  p, li { color: var(--text); }
+  .updated { color: var(--muted); margin: 0 0 32px; }
+  .summary {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px 20px;
+  }
+  a { color: var(--accent); text-underline-offset: 2px; }
+  code {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1px 6px;
+    font-size: 0.9em;
+  }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  footer { color: var(--muted); margin-top: 48px; font-size: 0.95rem; }
 </style>
 </head>
 <body>
-<h1>Privacy Policy — NovaAccessScale</h1>
-<p class="updated">Last updated: 22 June 2026</p>
-<p>NovaAccessScale (“the app”) is developed by NovaAccessLabs (“we”, “us”). This policy explains how the app handles your information. <strong>In short: the app does not collect, transmit, or share any personal data.</strong></p>
-<h2>Data we collect</h2>
-<p>We do not collect any personal data. The app has no user accounts, no analytics, no advertising, and no tracking. It does not request internet access and cannot send your data anywhere.</p>
-<h2>Data stored on your device</h2>
-<p>To function, the app saves the following <strong>only on your device</strong>, using your phone’s standard local storage. This information never leaves your device and is not accessible to us:</p>
-<ul>
-<li>Your saved presets (a name and a target weight).</li>
-<li>Your settings (feedback mode, spoken announcements, theme, high contrast, text size, language, auto-reconnect, demo mode).</li>
-<li>The identifier and name of the last scale you connected to (so the app can reconnect automatically) and your last target weight.</li>
-</ul>
-<p>Uninstalling the app removes this data.</p>
-<h2>Permissions</h2>
-<ul>
-<li><strong>Bluetooth (scan and connect):</strong> used solely to discover and connect to your kitchen scale. The Bluetooth scan is declared “never for location,” and the app does not use, derive, or collect your location.</li>
-<li>The app requests <strong>no internet permission</strong>.</li>
-</ul>
-<h2>Text-to-speech</h2>
-<p>Spoken announcements use your device’s built-in text-to-speech engine. The text is processed by your operating system on your device; it is not sent to us.</p>
-<h2>Third parties</h2>
-<p>We do not share data with any third party, because we do not collect any.</p>
-<h2>Children</h2>
-<p>The app does not collect personal data from anyone, including children.</p>
-<h2>Changes to this policy</h2>
-<p>If this policy changes, we will update this page and the date above.</p>
-<h2>Contact</h2>
-<p>Questions? Contact us at <a href="mailto:novaaccesslabs@gmail.com">novaaccesslabs@gmail.com</a> — <a href="https://novaaccesslabs.ch">novaaccesslabs.ch</a></p>
+<main>
+  <h1>Privacy Policy — NovaAccessScale</h1>
+  <p class="updated">Last updated: 9 July 2026</p>
+
+  <p>NovaAccessScale (&ldquo;the app&rdquo;) is developed by NovaAccessLabs. This
+  policy explains what the app does and does not do with your information.</p>
+
+  <div class="summary">
+    <strong>Summary:</strong> NovaAccessScale does not collect, store, or share
+    any personal data. There are no user accounts, no analytics, no advertising,
+    and no tracking.
+  </div>
+
+  <h2>Data the app handles</h2>
+  <ul>
+    <li><strong>Bluetooth:</strong> The app uses Bluetooth to scan for and connect
+    to your kitchen scale and to read the weight it reports. This communication
+    stays between your phone and your scale. The Bluetooth scanning permission is
+    declared with the <code>neverForLocation</code> flag — the app does not use
+    Bluetooth to derive your location.</li>
+    <li><strong>Your settings and presets:</strong> Preferences (theme, language,
+    feedback options) and the target-weight presets you create are stored only on
+    your device, using the Android system's local storage. They are never uploaded
+    anywhere.</li>
+    <li><strong>Speech:</strong> Spoken announcements are produced on-device by
+    your phone's text-to-speech engine.</li>
+  </ul>
+
+  <h2>Data we collect</h2>
+  <p>None. The app does not send any data off your device. It has no servers and
+  makes no network requests to us.</p>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li><strong>Bluetooth (scan / connect)</strong> — to find and talk to your scale.</li>
+    <li><strong>Vibrate</strong> — to provide haptic feedback.</li>
+  </ul>
+
+  <h2>Third parties</h2>
+  <p>The app does not share data with third parties. Links you choose to open (such
+  as our email or Instagram) hand off to the relevant app on your device; anything
+  you do there is governed by that service's own privacy policy.</p>
+
+  <h2>Children</h2>
+  <p>The app is a general-purpose tool and is not directed at children.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the updated version will be posted at this URL with a
+  new &ldquo;last updated&rdquo; date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy:
+  <a href="mailto:novaaccesslabs@gmail.com">novaaccesslabs@gmail.com</a></p>
+
+  <footer>NovaAccessScale is part of the NovaAccessLabs family of accessibility tools.</footer>
+</main>
 </body>
 </html>
