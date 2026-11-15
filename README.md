@@ -1,7 +1,7 @@
 # novaaccesslabs.github.io
 
-Public website for NovaAccessLabs — landing page and the NovaAccessScale
+Public website for NovaAccessLabs — landing page and the Kitchen Scale
 privacy policy. Served via GitHub Pages.
 
-- NovaAccessScale page and compatible scale (affiliate link): /scale/
-- NovaAccessScale privacy policy: /scale/privacy.html
+- Kitchen Scale page and compatible scale (affiliate link): /kitchen-scale/
+- Kitchen Scale privacy policy: /kitchen-scale/privacy.html
